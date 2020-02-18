@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Pnr Status</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	$(function(){
+		$("form").submit(function(evt){
+			evt.preventDefault();//prevent the browser from reloading the page 
+			var pnrNo=$("#pnrNo").val();
+			var url="http://localhost:8181/rest-demo/app/pnr?pnrNo="+pnrNo;
+			//now the cod eto hit the server
+			$.ajax({
+				url:url,
+				method:'GET',
+				success:function(data){
+					var tn=$("<p />").text("Train no:"+data.trainNo);
+					$("#pnrstatus").append(tn);
+					var tdate=$("</p />").text("travel date " +data.travelDate);
+					$("#pnrstatus").append(tdate);
+					$("#pnrstatus").append("<table>")
+					for(let p of data.passenger){
+					    $("#pnrstatus").append("<tr>")
+						var tname=$("<td />").text(p.name);
+					    //var tname = "<p>Passenger Name " + p.name + "</p>";
+					    //var tname=$("<p />").text(p.name);
+					    //var tname=$(p.name);
+					    
+						$("#pnrstatus").append(tname);
+						
+						//var tage=$("<p />").text("passenger age "+p.age);
+						var tage=$("<td />").text(p.age);
+						$("#pnrstatus").append(tage);
+						//var tgender=$("<p />").text("passenger gender "+p.gender);
+						var tgender=$("<p />").text(p.gender);
+						$("#pnrstatus").append("<td>"+tgender+"</td>");
+						//var tstatus=$("<p />").text("status "+p.status);
+						var tstatus=$("<p />").text(p.status);
+						$("#pnrstatus").append("<td>"+tstatus+"</td>");
+						$("#pnrstatus").append("</tr>");
+						
+						
+					}
+					$("#pnrstatus").append("<table/>")
+				}
+			})
+		})
+	})
+
+</script>
+<body>
+<h1>Welcome to RailSeatBookingWalaBabu.com/HumSuffer.co</h1>
+<h2>Check the status of Your Pnr here </h2>
+<h3>if the status is waiting don't hope for getting it confirmed</h3>
+<h4>go with flight ....hum apake vapas aane ki ummid karenge</h4>
+<form>
+	Enter PNR No:<input type="text" id="pnrNo">
+	<button type="submit">Get Status</button>
+	
+</form>
+<div id="pnrstatus"></div>
+<p></p>
+<table id="tb"></table>
+</body>
+</html>

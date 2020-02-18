@@ -1,0 +1,38 @@
+content_assist_add_import=true
+content_assist_autoactivation=true
+content_assist_autoactivation_delay=0
+content_assist_autoactivation_triggers_java=.
+content_assist_autoactivation_triggers_javadoc=@\#
+content_assist_autoinsert=true
+content_assist_case_sensitivity=false
+content_assist_category_order=org.eclipse.mylyn.java.ui.javaAllProposalCategory\:0\u0000org.eclipse.pde.api.tools.ui.apitools_proposal_category\:1\u0000org.eclipse.jpt.jpa.ui.jpaProposalCategory\:2\u0000org.eclipse.jdt.ui.templateProposalCategory\:3\u0000org.eclipse.jpt.jaxb.ui.jaxbCompletionProposals\:4\u0000org.eclipse.jst.ws.jaxws.ui.jaxwsProposalComputer\:5\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\:65541\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\:65542\u0000org.eclipse.jdt.ui.swtProposalCategory\:8\u0000org.eclipse.jdt.ui.textProposalCategory\:65544\u0000org.eclipse.jdt.ui.javaAllProposalCategory\:65545\u0000org.eclipse.jdt.ui.javaChainProposalCategory\:65546\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\:65547\u0000
+content_assist_disable_completion_trigger_chars=false
+content_assist_disabled_computers=org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000
+content_assist_fill_method_arguments=true
+content_assist_guess_method_arguments=false
+content_assist_insert_completion=true
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="com.lti.exam.model.Question"><rhs name\="com.lti.exam.model.Question"/></lhs><lhs name\="java.time.temporal.Temporal"><rhs name\="java.time.LocalDate"/></lhs><lhs name\="java.time.temporal.TemporalAccessor"><rhs name\="java.time.LocalDate"/></lhs><lhs name\="java.time.temporal.TemporalAdjuster"><rhs name\="java.time.LocalDate"/></lhs><lhs name\="java.time.chrono.ChronoLocalDate"><rhs name\="java.time.LocalDate"/></lhs><lhs name\="java.lang.Enum"><rhs name\="com.lti.model.Passenger$Gender"/><rhs name\="com.lti.model.Passenger$Status"/><rhs name\="javax.persistence.CascadeType"/></lhs><lhs name\="com.lti.model.Passenger$Gender"><rhs name\="com.lti.model.Passenger$Gender"/></lhs><lhs name\="com.lti.model.Passenger$Status"><rhs name\="com.lti.model.Passenger$Status"/></lhs><lhs name\="com.lti.dao.GenericDao"><rhs name\="com.lti.dao.GenericDao"/></lhs><lhs name\="com.lti.service.AccountService"><rhs name\="com.lti.service.AccountService"/></lhs><lhs name\="com.lti.entity.AccountTransaction"><rhs name\="com.lti.entity.AccountTransaction"/></lhs></history>
+content_assist_number_of_computers=23
+content_assist_prefix_completion=false
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+content_assist_show_visible_proposals=true
+content_assist_sorter=org.eclipse.jdt.ui.RelevanceSorter
+eclipse.preferences.version=1
+fontPropagated=true
+markOccurrences=false
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=18
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Consolas|12.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
+proposalOrderMigrated=true
+spelling_locale_initialized=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true
